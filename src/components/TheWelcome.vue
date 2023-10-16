@@ -2,7 +2,7 @@
 import WelcomeItem from './WelcomeItem.vue'
 
 defineProps({
-  randomMessage: {
+  welcomeMessage: {
     type: String,
     required: true
   }
@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <WelcomeItem>
-    <template #heading>Documentation {{ randomMessage }}</template>
+    <template #heading>Documentation {{ welcomeMessage }}</template>
     <template #info>provides you with all information you need to get started. </template>
   </WelcomeItem>
 </template>

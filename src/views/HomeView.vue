@@ -4,6 +4,6 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <main>
-    <TheWelcome randomMessage="Test Message" />
+    <TheWelcome welcomeMessage="Test Message" />
   </main>
 </template>
