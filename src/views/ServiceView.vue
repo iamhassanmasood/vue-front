@@ -1,15 +1,5 @@
 <template>
-  <div class="service">
+  <div>
     <h1>Service</h1>
   </div>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .service {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
