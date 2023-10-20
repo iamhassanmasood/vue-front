@@ -9,8 +9,6 @@ async function enviarScript(scriptText) {
   if (!textarea) throw new Error('Não há uma conversa aberta')
 
   for (const line of lines) {
-    console.log(line)
-
     textarea.focus()
     document.execCommand('insertText', false, line)
     textarea.dispatchEvent(new Event('change', { bubbles: true }))
