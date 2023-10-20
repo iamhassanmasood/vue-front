@@ -5,6 +5,8 @@ defineProps({
     required: true
   }
 })
+const viteUrl = 'https://vitejs.dev/'
+const vueUrl = 'https://vuejs.org/'
 </script>
 
 <template>
@@ -12,8 +14,8 @@ defineProps({
     <h1>{{ msg }}</h1>
     <h3>
       You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      <a v-bind:href="viteUrl" target="_blank" rel="noopener">Vite</a> +
+      <a v-bind:href="vueUrl" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
   </div>
 </template>
