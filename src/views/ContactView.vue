@@ -7,7 +7,7 @@ export default {
       count.value++
     }
     const decrement = () => {
-      count.value++
+      count.value--
     }
 
     return {
