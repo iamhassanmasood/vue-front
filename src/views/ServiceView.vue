@@ -2,15 +2,22 @@
 export default {
   data() {
     return {
-      count: 1
+      obj: {
+        nested: { count: 0 },
+        arr: ['foo', 'bar']
+      }
     }
   },
   methods: {
     increment() {
-      return this.count++
+      return this.obj.nested.count++
     },
     decrement() {
-      return this.count--
+      return this.obj.nested.count--
+    },
+    mutateDeeply() {
+      this.obj.nested.count++
+      this.obj.arr.push('baz')
     }
   }
 }
@@ -20,8 +27,10 @@ export default {
     <h1>Service</h1>
     <br />
     <button @click="increment" class="btn">+</button>
-    <span class="count">{{ count }}</span>
+    <span class="count">{{ obj.nested.count }}</span>
     <button @click="decrement" class="btn">-</button>
+    <br />
+    <button @click="mutateDeeply" class="btn display">Mute Display</button>
   </div>
 </template>
 <style scoped>
@@ -38,5 +47,8 @@ export default {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+.display {
+  margin-top: 10px;
 }
 </style>
