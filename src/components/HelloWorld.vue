@@ -13,7 +13,6 @@ const vueUrl = 'https://vuejs.org/'
   <div>
     <h1>{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
       <a v-bind:href="viteUrl" target="_blank" rel="noopener">Vite</a> +
       <a v-bind:href="vueUrl" target="_blank" rel="noopener">Vue 3</a>.
     </h3>

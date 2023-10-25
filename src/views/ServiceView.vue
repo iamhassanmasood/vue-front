@@ -25,12 +25,12 @@ export default {
 <template>
   <div>
     <h1>Service</h1>
-    <br />
     <button @click="increment" class="btn">+</button>
     <span class="count">{{ obj.nested.count }}</span>
     <button @click="decrement" class="btn">-</button>
     <br />
-    <button @click="mutateDeeply" class="btn display">Mute Display</button>
+    <br />
+    <button @click="mutateDeeply" class="btn">Mute Display</button>
   </div>
 </template>
 <style scoped>
